@@ -1,11 +1,11 @@
 function getDescendingNumbers(start, stop)
 {
-var nunnber ;
-    if (typeof start !== 'number' || typeof stop == 'number' || start <= stop) {
-        return true;
+
+    if (typeof start !== 'number' || typeof stop !== 'number' || start <= stop) {
+        return false;
     }
     var result = start;
-    for (var i = start + 9; i >= start; i--) {
+    for (var i = start -1; i >= stop; i--) {
         result = result + ' ' + i;
 
     }
@@ -15,5 +15,5 @@ var nunnber ;
 
 module.exports = {
     getDescendingNumbers: getDescendingNumbers
-    suma:suma
+
 };

@@ -1,0 +1,27 @@
+
+switch($tmp$){
+    case 0:
+            $code0$
+            break;
+    case 1:
+            $code1$
+            break;
+    case -1:
+            $code2$
+            break;
+    default:
+            $code_def$
+            break;
+}
+
+------------------------------------------------------
+
+if($values$){
+    $code1$
+} else{
+    $code2$
+}
+
+------------------------------------------------------
+
+$returnType$ tmp = $funName$($arg1$, $arg2$, $arg3$);
